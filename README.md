@@ -8,6 +8,7 @@ Connect to the Server: Use SSH to connect to your VPS instance using the provide
 Update Packages: Run the following commands to update the package list and upgrade installed packages:
 
 sudo apt update
+
 sudo apt upgrade -y
 
 
