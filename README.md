@@ -14,6 +14,7 @@ Update Packages: Run the following commands to update the package list and upgra
 ```
 sudo apt update
 sudo apt upgrade
+sudo apt install nginx mysql-server php-fpm php-mysql php-curl php-gd php-mbstring php-xml
 ```
 
 Step-2) Website Configuration:
