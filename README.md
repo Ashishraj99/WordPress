@@ -32,7 +32,7 @@ Add the following configuration (adjust paths and settings as needed):
 ```
 server {
     listen 80;
-    server_name example.com www.example.com;
+    server_name demoword.hopto.org www.demoword.hopto.org;
 
     root /var/www/html;
     index index.php;
@@ -43,7 +43,7 @@ server {
 
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
     }
 
     location ~ /\.ht {
@@ -73,7 +73,7 @@ Create a new MySQL database and user for your WordPress site:
 
 ```
 CREATE DATABASE wordpress;
-CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'your_password';
+CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY 'Ashish12#';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpressuser'@'localhost';
 FLUSH PRIVILEGES;
 Exit
@@ -121,7 +121,7 @@ sudo apt install certbot python3-certbot-nginx -y
 2) Obtain SSL Certificate: Use Certbot to obtain a free SSL certificate for your domain:
 
 ```
-sudo certbot --nginx -d demoword.com -d www.demoword.com
+sudo certbot --nginx -d demoword.com -d www.demoword.hopto.org
 
 ```
 
